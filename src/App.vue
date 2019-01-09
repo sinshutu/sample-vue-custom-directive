@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Button />
-    <div class="btn" v-data-action-click="div">
+    <div class="btn" v-data-action-click="'div'">
       Div
     </div>
   </div>
