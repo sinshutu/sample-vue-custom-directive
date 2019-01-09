@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Button />
+    <div class="btn" v-data-action-click="div">
+      Div
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Button from './components/Button.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Button
   }
 }
 </script>
-
-<style>
+<style scoped>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  display: inline-flex;
+}
+.btn {
+  color: #fff;
+  background-color: #0ce2ba;
+  height: 60px;
+  width: 180px;
+  font-size: 25px;
+  margin: 5px;
+  border: 0px;
+  border-radius: 3px;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  line-height: 60px;
 }
 </style>
